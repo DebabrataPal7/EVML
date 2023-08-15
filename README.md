@@ -6,7 +6,15 @@ The code repository for "Extreme Value Meta-Learning for Few-Shot Open-Set Recog
 
 Recent advancements in prototype-based few-shot open-set recognition (FSOSR) approaches reject outliers based on the high metric distances from the known class prototypes and fail to distinguish spectrally fine-grained land cover outliers. Learning only the Euclidean distance fit spherical distributions ignores the essential distribution parameters such as shift, shape, and scale. The conventional meta-training of FSOSR also ignores the topological consistency of the known classes impacting reduced closed and open accuracy in the meta-testing phase. Moreover, the existing hyperspectral outlier detection methods do not provide intuition about the rejected outlier’s land cover category. To tackle the aforesaid problems, we introduce extreme value meta-learning (EVML), where we fit Weibull distributions per known class based on the limited support-set distances from the respective prototypes. A newly proposed prototypical OpenMax (P-OpenMax) layer leverages these meta-trained Weibull models and calibrates the query distances to reject fine-grained outliers. Then, to learn the topological consistency, we split all the samples in an episode into four parts, including the prototype and its same known class queries, other known class queries, and the remaining known–unknown queries. A novel open quadruplet loss ensures that a prototype’s same-class queries reside closer than the other known-class and known–unknown queries. Finally, we coarse classify the detected outliers into major land cover categories and perform cross-dataset incremental FSOSR to enhance robustness over unknown geographical regions. We validate the efficacy of EVML over four benchmark hyperspectral datasets.
 
-<img src='Imgs/Fig01_EVML_Encoder.png' width='700'>
+<img src='Imgs/Fig3_Architecture.png' width='700'>
+
+## Open Quadruplet Loss
+
+<img src='Imgs/Fig4_Open_Quadruplet.png' width='700'>
+
+## Annotation of coarse-grained classes
+
+<img src='Imgs/Coarse Classes.png' width='700'>
 
 ## Prerequisites
 

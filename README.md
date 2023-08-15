@@ -34,17 +34,19 @@ The codes for meta-training, fine-tuning and meta-testing on Indian Pines datase
 ## Citation  
 If you use any content of this repo for your work, please cite the following bib entry:
 
-@ARTICLE{10126083,
-  author={Pal, Debabrata and Bose, Shirsha and Banerjee, Biplab and Jeppu, Yogananda},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Extreme Value Meta-Learning for Few-Shot Open-Set Recognition of Hyperspectral Images}, 
-  year={2023},
-  volume={61},
-  number={},
-  pages={1-16},
-  doi={10.1109/TGRS.2023.3276952}}
+
+	@ARTICLE{10126083,
+    author    = {Pal, Debabrata and Bose, Shirsha and Banerjee, Biplab and Jeppu, Yogananda},
+    journal   = {IEEE Transactions on Geoscience and Remote Sensing},
+    title     = {Extreme Value Meta-Learning for Few-Shot Open-Set Recognition of Hyperspectral Images},
+    year      = {2023},
+    volume    = {61},
+    number    = {},
+    pages     = {1-16},
+    doi       = {10.1109/TGRS.2023.3276952}
+	}
 
 ## Licence
 EVML is released under the MIT license.
 
-Copyright (c) 2022 Debabrata Pal. All rights reserved.
+Copyright (c) 2023 Debabrata Pal. All rights reserved.
